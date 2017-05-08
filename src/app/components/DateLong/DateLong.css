@@ -1,0 +1,10 @@
+.date {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+
+.date > p {
+  margin: 0;
+  font-size: 2.5em;
+}
