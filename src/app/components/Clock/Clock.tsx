@@ -31,15 +31,13 @@ export class Clock extends React.Component<{}, ClockState> {
   }
 
   getTime(): string {
-    const localTime = new Date().toLocaleTimeString(
+    return new Date().toLocaleTimeString(
       [],
       {
         hour: '2-digit',
         minute: '2-digit',
       }
-    );
-
-    return localTime.slice(0, -3)           // remove the AM/PM at the end
+    ).slice(0, -3)           // remove the AM/PM at the end
 
   }
 
